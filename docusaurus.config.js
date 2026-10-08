@@ -18,10 +18,12 @@ const config = {
   favicon: 'images/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://github.com',
+  url: 'https://introduction-to-liner-algebra-6th-edtion-cn.pages.dev',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  // Match Cloudflare Pages' directory-style URLs.
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

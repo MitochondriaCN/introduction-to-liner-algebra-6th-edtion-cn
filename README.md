@@ -34,6 +34,16 @@ pnpm build
 
 ### 部署
 
+#### Cloudflare Pages
+
+- 构建命令：`pnpm build`
+- 构建输出目录：`build`
+- Node.js 版本：22 或更新版本（可设置环境变量 `NODE_VERSION=22`）
+
+封面使用 `/docs/` 路由，站点启用 `trailingSlash: true`，与 Cloudflare Pages 的目录式地址保持一致。不要将封面设为 `/docs/index`：Cloudflare Pages 会将末尾的 `/index` 重定向到 `/docs/`，导致路由不匹配。
+
+#### GitHub Pages
+
 使用 SSH：
 
 ```
